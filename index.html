@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fun Todo List</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts for additional fun typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="floating-elements">
+        <!-- Clouds for background animation -->
+        <div class="cloud" style="left: 10%; top: 50px; animation-delay: 0s;"></div>
+        <div class="cloud" style="left: 30%; top: 150px; animation-delay: 30s;"></div>
+        <div class="cloud" style="left: 60%; top: 80px; animation-delay: 60s;"></div>
+        <div class="cloud" style="left: 80%; top: 200px; animation-delay: 90s;"></div>
+        
+        <!-- Bubbles for background animation -->
+        <div class="bubble" style="width: 40px; height: 40px; left: 10%; bottom: -40px; animation-duration: 20s; animation-delay: 0s;"></div>
+        <div class="bubble" style="width: 20px; height: 20px; left: 25%; bottom: -20px; animation-duration: 15s; animation-delay: 5s;"></div>
+        <div class="bubble" style="width: 30px; height: 30px; left: 40%; bottom: -30px; animation-duration: 25s; animation-delay: 10s;"></div>
+        <div class="bubble" style="width: 25px; height: 25px; left: 60%; bottom: -25px; animation-duration: 18s; animation-delay: 15s;"></div>
+        <div class="bubble" style="width: 35px; height: 35px; left: 75%; bottom: -35px; animation-duration: 22s; animation-delay: 20s;"></div>
+        <div class="bubble" style="width: 15px; height: 15px; left: 90%; bottom: -15px; animation-duration: 12s; animation-delay: 25s;"></div>
+        
+        <!-- Stars for container decoration -->
+        <span class="star" style="top: 20px; left: 15%;"></span>
+        <span class="star" style="top: 40px; left: 35%;"></span>
+        <span class="star" style="top: 60px; left: 55%;"></span>
+        <span class="star" style="top: 80px; left: 75%;"></span>
+        <span class="star" style="top: 100px; left: 25%;"></span>
+        <span class="star" style="top: 120px; left: 45%;"></span>
+        <span class="star" style="top: 140px; left: 65%;"></span>
+        <span class="star" style="top: 160px; left: 85%;"></span>
+        
+        <!-- Animated character element -->
+        <div id="animatedCharacter"></div>
+        
+        <!-- Sticker animation element -->
+        <div id="stickerAnimation">🏆</div>
+        
+        <!-- Multi-task completion message -->
+        <div id="multiCompleteMessage"></div>
+    </div>
+    
+    <div class="container">
+        <h1>My Fun Tasks!</h1>
+        <div class="task-count">You have <span id="count">0</span> tasks</div>
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="What needs to be done?">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+        
+        <!-- Progress visualization -->
+        <div class="progress-container">
+            <div id="progressBar" class="progress-fill"></div>
+            <div id="progressText" class="progress-text">No tasks yet</div>
+        </div>
+        
+        <div class="sticker-collection">
+            Stickers Earned: <span id="stickerCount">0</span> 🎉
+        </div>
+    </div>
+
+    <!-- Confetti container for celebration effects -->
+    <div id="confettiContainer"></div>
+    
+    <!-- Reward and achievement notifications -->
+    <div id="rewardMessage"></div>
+    <div id="achievementNotification"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
